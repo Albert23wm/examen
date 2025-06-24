@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploración Espacial | Descubre el Universo</title>
+    <!-- Enlace futuro para CSS -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <h1>Cosmos<span>Explorer</span></h1>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#misiones" class="nav-link">Misiones</a></li>
+                <li class="nav-item"><a href="#planetas" class="nav-link">Planetas</a></li>
+                <li class="nav-item"><a href="#galeria" class="nav-link">Galería</a></li>
+                <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" aria-label="Menú móvil">
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+        </button>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero-section">
+            <div class="hero-content">
+                <h2>Explora los Secretos del Universo</h2>
+                <p>Descubre las maravillas del cosmos, desde nuestro sistema solar hasta las galaxias más lejanas.</p>
+                <button class="cta-button" id="exploreBtn">Comienza tu Viaje</button>
+            </div>
+            <div class="hero-image">
+                <!-- Imagen será añadida via CSS -->
+            </div>
+        </section>
+
+        <section id="misiones" class="missions-section">
+            <h2 class="section-title">Misiones Espaciales Destacadas</h2>
+            <div class="missions-grid">
+                <article class="mission-card">
+                    <div class="mission-icon" data-mission="apollo"></div>
+                    <h3>Programa Apolo</h3>
+                    <p>Las misiones que llevaron al hombre a la Luna entre 1969 y 1972.</p>
+                    <button class="info-button" data-mission="apollo">Más info</button>
+                </article>
+                <article class="mission-card">
+                    <div class="mission-icon" data-mission="voyager"></div>
+                    <h3>Voyager</h3>
+                    <p>Sondas que exploraron los planetas exteriores y siguen enviando datos desde el espacio interestelar.</p>
+                    <button class="info-button" data-mission="voyager">Más info</button>
+                </article>
+                <article class="mission-card">
+                    <div class="mission-icon" data-mission="mars"></div>
+                    <h3>Misiones a Marte</h3>
+                    <p>Rovers y orbitadores que estudian el planeta rojo en busca de signos de vida.</p>
+                    <button class="info-button" data-mission="mars">Más info</button>
+                </article>
+                <article class="mission-card">
+                    <div class="mission-icon" data-mission="jameswebb"></div>
+                    <h3>Telescopio James Webb</h3>
+                    <p>El telescopio espacial más potente, que observa las primeras galaxias del universo.</p>
+                    <button class="info-button" data-mission="jameswebb">Más info</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="planetas" class="planets-section">
+            <h2 class="section-title">Nuestro Sistema Solar</h2>
+            <div class="solar-system">
+                <div class="planet" data-planet="mercury">
+                    <div class="planet-image"></div>
+                    <span class="planet-name">Mercurio</span>
+                </div>
+                <div class="planet" data-planet="venus">
+                    <div class="planet-image"></div>
+                    <span class="planet-name">Venus</span>
+                </div>
+                <div class="planet" data-planet="earth">
+                    <div class="planet-image"></div>
+                    <span class="planet-name">Tierra</span>
+                </div>
+                <div class="planet" data-planet="mars">
+                    <div class="planet-image"></div>
+                    <span class="planet-name">Marte</span>
+                </div>
+                <div class="planet" data-planet="jupiter">
+                    <div class="planet-image"></div>
+                    <span class="planet-name">Júpiter</span>
+                </div>
+                <div class="planet" data-planet="saturn">
+                    <div class="planet-image"></div>
+                    <span class="planet-name">Saturno</span>
+                </div>
+                <div class="planet" data-planet="uranus">
+                    <div class="planet-image"></div>
+                    <span class="planet-name">Urano</span>
+                </div>
+                <div class="planet" data-planet="neptune">
+                    <div class="planet-image"></div>
+                    <span class="planet-name">Neptuno</span>
+                </div>
+            </div>
+            <div class="planet-info" id="planetInfo">
+                <p>Selecciona un planeta para ver información detallada.</p>
+            </div>
+        </section>
+
+        <section id="galeria" class="gallery-section">
+            <h2 class="section-title">Galería Cósmica</h2>
+            <div class="gallery-controls">
+                <button class="gallery-btn" id="prevBtn">Anterior</button>
+                <button class="gallery-btn" id="nextBtn">Siguiente</button>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-slide active" data-slide="1">
+                    <img src="" alt="Nebulosa del Águila" class="slide-image">
+                    <div class="slide-caption">Pilares de la Creación en la Nebulosa del Águila</div>
+                </div>
+                <div class="gallery-slide" data-slide="2">
+                    <img src="" alt="Galaxia de Andrómeda" class="slide-image">
+                    <div class="slide-caption">Galaxia de Andrómeda, nuestra vecina cósmica</div>
+                </div>
+                <div class="gallery-slide" data-slide="3">
+                    <img src="" alt="Superficie de Marte" class="slide-image">
+                    <div class="slide-caption">Vista panorámica de la superficie de Marte</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-section">
+            <h2 class="section-title">Contáctanos</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="interest">Interés principal:</label>
+                    <select id="interest" name="interest">
+                        <option value="misiones">Misiones espaciales</option>
+                        <option value="astronomia">Astronomía</option>
+                        <option value="educacion">Educación</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>CosmosExplorer</h3>
+                <p>Explorando los misterios del universo desde 2023.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#misiones">Misiones</a></li>
+                    <li><a href="#planetas">Planetas</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Conéctate</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="Facebook"><span>FB</span></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><span>TW</span></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><span>IG</span></a>
+                    <a href="#" class="social-icon" aria-label="YouTube"><span>YT</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 CosmosExplorer. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts se añadirán posteriormente -->
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
